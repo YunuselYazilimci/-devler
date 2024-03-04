@@ -1,0 +1,35 @@
+#include <iostream>
+#include <ctime>
+#include <stdio.h>
+using namespace std;
+#pragma warning (disable:4996)
+
+int main(){
+	float s1, s2, x;
+	int islem;
+	printf("toplama icin 1\ncikarma icin 2\ncarpma icin 3\nbolme icin 4\nkullanin");
+	scanf("%d", &islem);
+	printf("simdi ise buraya sırayla birinci ve ikinci sayiyi giriniz\n->");
+	scanf("%f", &s1);
+	printf("->");
+	scanf("%f", &s2);
+	switch (islem) {
+	case 1:
+		x = s1 + s2;
+		printf("%f", x);
+		break;
+	case 2:
+		x = s1 - s2;
+		printf("%f", x);
+		break;
+	case 3:
+		x = s1 * s2;
+		printf("%f", x);
+		break;
+	case 4:
+		x = s1 / s2;
+		printf("%f", x);
+		break;
+	}
+	return 0;
+}

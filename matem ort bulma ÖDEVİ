@@ -1,0 +1,25 @@
+#include <iostream>
+#include <ctime>
+#include <stdio.h>
+#include<locale.h>
+#include <conio.h>
+#include <stdlib.h>
+#include <time.h>
+#pragma warning (disable:4996)
+using namespace std;
+
+int main() {
+	setlocale(LC_ALL, "Turkish");
+int x=1,mat_s[x],ortalama,ilkx;
+cout<<"matematik ortalamanızı bulmamız için girdiğiniz sınav sayısını yazınız\n->";
+cin>>x;
+ilkx=x;
+for(x;x>0;x--){
+	cout<<x<<"'inci sınavınızı giriniz -> ";
+	cin>>mat_s[x];
+	ortalama=ortalama+mat_s[x];
+}
+ortalama=ortalama/ilkx;
+cout<<"ortalamanız ->"<<ortalama;
+	return 0;
+}

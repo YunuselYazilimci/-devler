@@ -1,0 +1,47 @@
+#include <iostream>
+#include <ctime>
+#include <stdio.h>
+#include<locale.h>
+#include <conio.h>
+#include <stdlib.h>
+#include <time.h>
+#pragma warning (disable:4996)
+using namespace std;
+
+int main() {
+	setlocale(LC_ALL, "Turkish");
+	int bosluk,yildiz,satir,bosluk_sayac,yildiz_sayac;
+	bosluk_sayac=5;
+	yildiz_sayac=1;
+	satir=5;
+	yildiz=1;
+	for(satir;satir>0;satir--){
+		bosluk=bosluk_sayac;
+		for(bosluk;bosluk>0;bosluk--){
+			cout<<" ";
+		}
+		bosluk_sayac--;
+	for(yildiz;yildiz>0;yildiz--){
+		cout<<"*";
+	}
+	yildiz_sayac=yildiz_sayac+2;
+	yildiz=yildiz_sayac;
+	cout<<"\n";
+	}
+	satir=5;
+	for(satir;satir>0;satir--){
+			bosluk=bosluk_sayac;
+		for(bosluk;bosluk>0;bosluk--){
+			cout<<" ";
+		}
+		bosluk_sayac++;
+	for(yildiz;yildiz>0;yildiz--){
+		cout<<"*";
+	}
+	yildiz_sayac=yildiz_sayac-2;
+	yildiz=yildiz_sayac;
+	cout<<"\n";
+	}
+	cout<<"     *";
+	return 0;
+}

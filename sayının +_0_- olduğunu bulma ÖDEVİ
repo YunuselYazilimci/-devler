@@ -1,0 +1,26 @@
+#include <iostream>
+#include <ctime>
+#include <stdio.h>
+#include<locale.h>
+#include <conio.h>
+#include <stdlib.h>
+#include <time.h>
+#pragma warning (disable:4996)
+using namespace std;
+
+int main() {
+	setlocale(LC_ALL, "Turkish");
+	int x;
+	cout<<"bir sayı giriniz\n->";
+	cin>>x;
+	if(x==0){
+		cout<<"sayınız nötrdür";
+	}
+	if(x<0){
+		cout<<"sayınız negatifdir";
+	}
+	if(x>0){
+		cout<<"sayınız pozitifdir";
+	}
+	return 0;
+}

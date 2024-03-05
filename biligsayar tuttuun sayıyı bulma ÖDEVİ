@@ -1,0 +1,43 @@
+#include <iostream>
+#include <ctime>
+#include <stdio.h>
+#include<locale.h>
+#include <conio.h>
+#include <stdlib.h>
+#include <time.h>
+#pragma warning (disable:4996)
+using namespace std;
+
+int main() {
+	setlocale(LC_ALL, "Turkish");
+int secim=0,tahmin=50,ayar=50,denemesayisi=0;
+cout <<"bu bir tahmin oyunudur lütfen aklınızdan 100 ila 0 arasında sayı tutunuz";
+_sleep(2000);
+cout <<"\nrobot:50";
+while (secim != 2){
+	ayar=ayar/2;
+	cout<<"\nDaha yüksek için 1\nDoğru ise 2\nDaha alçak ise 3\nkullanınız\n->";
+	cin >>secim;
+	denemesayisi++;
+	if (secim==1){
+		tahmin=tahmin+ayar+1;
+		if (tahmin>100){
+			cout <<"lütfen 100 ila 0 arasında sayı tutunuz";
+			tahmin=50;
+			ayar=50;
+		}
+		cout<<"\nrobot:"<<tahmin;
+	}	if (secim==3){
+		tahmin=(tahmin-ayar)-1;
+		if (tahmin<0){
+			cout <<"lütfen 100 ila 0 arasında sayı tutunuz";
+			tahmin=50;
+			ayar=50;
+		}
+		cout<<"\nrobot:"<<tahmin;
+	}
+}
+denemesayisi--;
+cout<<denemesayisi<<"inci denemede buldu";
+	return 0;
+}

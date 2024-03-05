@@ -1,0 +1,23 @@
+#include <iostream>
+#include <ctime>
+#include <stdio.h>
+#include<locale.h>
+#include <conio.h>
+#include <stdlib.h>
+#include <time.h>
+#pragma warning (disable:4996)
+using namespace std;
+
+string hiWorld(){
+	string hiWorld;
+	hiWorld="selam dünya\n";
+	return hiWorld;
+}
+
+int main() {
+	setlocale(LC_ALL, "Turkish");
+for (int i=1;i<=10;i++){
+	cout<<i<<")"<<hiWorld();
+}
+	return 0;
+}

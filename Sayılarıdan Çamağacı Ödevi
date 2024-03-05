@@ -1,0 +1,17 @@
+#include <iostream>
+#include <ctime>
+#include <stdio.h>
+using namespace std;
+#pragma warning (disable:4996)
+
+
+int main(){
+for(int satir=1;satir<=9;satir++){
+	for(int sutun=1;sutun<=satir;sutun++){
+	
+		printf("%d",satir);
+	}
+	printf("\n");
+}
+	return 0;
+}
